@@ -1,0 +1,258 @@
+body{
+    background-color:  rgb(12, 12, 12);
+}
+
+.navbar{
+    background-color: rgb(12, 12, 12);
+}
+
+h5{
+  color: #2DA635;
+}
+
+.list-group-item{
+  color: rgb(226, 226, 226);
+}
+
+.list-group-item:hover {
+  color: #2DA635;
+  cursor: default;
+}
+
+/* Mantener las pestañas en blanco sin cambiar al hacer hover */
+.nav-tabs .nav-link {
+  color: white; 
+}
+
+.nav-tabs .nav-link:hover {
+  color: #2DA635; 
+}
+
+.nav-tabs .nav-link.active {
+  color: white; 
+  background-color: transparent; 
+  border-color: transparent transparent #2DA635;
+}
+
+/* Cada item con su borde fino */
+.content-item {
+      border: 1px solid rgb(93, 93, 93);
+      border-radius: 0;
+      padding: 20px;
+      margin-bottom: 0; 
+    }
+
+.content-item:hover{
+    background-color: rgba(255, 255, 255, 0.058);
+}
+
+/* Hace que solo el contenido de las pestañas scrollee */
+    .tab-content {
+      max-height: 83vh;
+      overflow-y: auto; 
+      padding-right: 10px;
+    }
+
+    /* Opcional: personalizar scrollbar */
+    .tab-content::-webkit-scrollbar {
+      width: 5px;
+    }
+    .tab-content::-webkit-scrollbar-thumb {
+      background-color: #2DA635; /* verde */
+      border-radius: 0px;
+    }
+
+.redes:hover{
+    color: #1ad127;
+}
+
+p{
+    color: rgb(200, 200, 200);
+}
+
+
+
+ form {
+      display: grid;
+      grid-gap: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: none;
+      font-size: 12 px;
+      color: #C8C8C8;
+      background-color: #1E2021; /* gris */ 
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #C8C8C8; /* placeholder blanco */
+    }
+
+    textarea {
+      border-radius: 0px  8px 8px 8px;
+      resize: none;
+      min-height: 100px;
+      grid-column: span 2;
+    }
+
+    /* Dropdown con flecha verde */
+    select {
+      appearance: none;
+      max-height: 45px;
+      background: #1E2021 url("data:image/svg+xml;utf8,<svg fill='green' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat right 10px center;
+      background-size: 35px;
+      cursor: pointer;
+      grid-column: span 2;
+    }
+
+    /* Botón ocupa las dos columnas */
+    button {
+      grid-column: span 2;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #2DA635;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0a8f0a;
+    }
+
+
+
+
+     .proyecto {
+      background: none;
+      padding: 15px;
+      border-radius: 0px;
+      cursor: pointer;
+      margin-top: 0px;
+      transition: 0.2s;
+      border: 1px solid rgb(93, 93, 93);
+    }
+
+    .proyecto:hover {
+      background-color: rgba(255, 255, 255, 0.058);
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color:  rgb(12, 12, 12);
+      padding: 20px;
+      border-radius: 0px;
+      max-width: auto;
+      width: 80%;
+      position: relative;
+      border: 1px solid rgb(93, 93, 93);
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      color: white;
+    }
+
+  #wsp-flotante {
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  bottom: 30px;       
+  right: 30px;        
+  background-color: white;
+  color: black;
+  font-size: 35px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s, color 0.1s;
+}
+
+#wsp-flotante:hover {
+  background-color: #2DA635;   
+  color: white;
+
+}
+
+.proyecto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .proyecto img {
+    height: 140px;
+  }
+}
+
+/* Carrusel dentro del modal */
+#modal .carousel-item img {
+  max-height: 400px;   
+  object-fit: cover;     /* recorta sin deformar */
+  border-radius: 10px;  
+}
+
+/* Ajuste responsive para móviles */
+@media (max-width: 408px) {
+  #modal .carousel-item img {
+    height: 250px;       
+  }
+}
+
+.icon-cards:hover{
+color: #1ad127;
+}
+
+
+.btn-web {
+  border: 2px solid #28a745; 
+  color: #28a745;            
+  background: transparent;   
+  padding: 4px 10px;       
+  margin-top: 5px;  
+  border-radius: 5px;
+  font-size: 0.9rem;        
+  white-space: nowrap;       
+  transition: all 0.3s ease; 
+  text-decoration: none;     
+}
+
+.btn-web:hover {
+  background: #28a745; /* verde al pasar el mouse */
+  color: white;         /* texto blanco */
+  text-decoration: none;
+}
+
+/* Responsive: si la pantalla es pequeña, que el botón baje debajo del título */
+@media (max-width: 576px) {
+  .btn-web {
+    margin-top: 8px;
+    display: inline-block;
+  }
+}
